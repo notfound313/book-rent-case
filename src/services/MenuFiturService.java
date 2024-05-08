@@ -49,6 +49,7 @@ public class MenuFiturService {
                 if(book.getStock() <= 9  ){
                     book.calculateLoanPrice();
                 }
+                book.setStock(book.getStock()-1);
                 book.calculateLoanPrice();               
                 
                 System.out.println(loanBookOrder.getLoadId());
